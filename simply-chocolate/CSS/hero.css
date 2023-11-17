@@ -1,5 +1,5 @@
 html {
-  background-color: #b8b8b8;
+  /* background-color: #b8b8b8; */
 }
 /* ------------- Chwilowy reset ------------- */
 * {
@@ -8,7 +8,6 @@ html {
   box-sizing: border-box;
   font-family: Monrserrat, sans-serif;
 }
-
 .hero a,
 .hero button {
   text-decoration: none;
@@ -64,6 +63,10 @@ html {
   padding: 12px 28px;
   border-radius: 100px;
   border: 1px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 300ms ease-in-out;
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -71,10 +74,15 @@ html {
   border: 1px solid rgba(253, 146, 34, 1);
 }
 .hero-buy-btn {
-  padding: 12px 28px;
+  padding: 10px 28px;
   border-radius: 100px;
   border-color: transparent;
   background: #fd9222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
 }
 .hero-buy-btn:hover,
 .hero-buy-btn:focus {
@@ -87,10 +95,12 @@ html {
   gap: 12px;
 }
 .hero-scroll {
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.36px;
+  transition: 300ms ease-in-out;
 }
 .hero-scroll-icon {
   display: flex;
@@ -100,9 +110,11 @@ html {
   height: 28px;
   border-radius: 50%;
   background-color: #fff;
+  transition: 300ms ease-in-out;
 }
 .hero-scroll-svg {
   fill: rgba(253, 146, 34, 1);
+  transition: 300ms ease-in-out;
 }
 .hero-scroll:hover,
 .hero-scroll:focus {
@@ -116,6 +128,7 @@ html {
 .hero-scroll:focus + .hero-scroll-icon .hero-scroll-svg {
   fill: rgba(252, 241, 224, 1);
 }
+
 .hero-scroll-svg:hover,
 .hero-scroll-svg:focus {
   fill: rgba(252, 241, 224, 1);
@@ -128,7 +141,57 @@ html {
 .hero-scroll-icon:focus {
   background-color: rgba(253, 146, 34, 1);
 }
-
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    min-width: 768px;
+  }
+  .hero-container {
+    width: 704px;
+    height: 890px;
+    background-image: url(../IMG/Hero/Tablet/chocolate-covered-cocoa-powder\ 1@1x.png);
+    padding: 671px 40px 40px 40px;
+  }
+  .hero-sub-title {
+    width: 484px;
+    font-size: 28px;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: -0.84px;
+  }
+  .hero-btns-container {
+    flex-direction: row;
+    gap: 153px;
+  }
+  .hero-scroll {
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.42px;
+  }
+  .hero-scroll-icon {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .hero {
+    min-width: 1200px;
+  }
+  .hero-container {
+    width: 1136px;
+    height: 600px;
+    background-image: url(../IMG/Hero/Desktop/chocolate-covered-cocoa-powder\ 1@1x.png);
+    padding: 381px 40px 40px 40px;
+  }
+  .hero-sub-title {
+    width: 484px;
+    font-size: 28px;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: -0.84px;
+  }
+  .hero-btns-container {
+    flex-direction: row;
+    gap: 585px;
+  }
+}
 .rewieves {
   height: 200vh;
 }
