@@ -2,6 +2,7 @@
 
 .hero a,
 .hero button {
+  text-decoration: none;
   color: #fff;
 }
 .hero {
