@@ -1,17 +1,12 @@
+@import url(global-setup.css);
 html {
   background-color: #b8b8b8;
 }
 /* ------------- Chwilowy reset ------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Monrserrat, sans-serif;
-}
+
 .hero a,
 .hero button {
-  text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
 }
 
 /* ------------- Chwilowy reset ------------- */

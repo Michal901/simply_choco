@@ -34,10 +34,55 @@
 }
 
 /* -------- RESET -------- */
-
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: var(--font-montserrat);
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul {
+  list-style: none;
+}
+
+/* -------- STYLES -------- */
+html {
+  background: #fafafa;
+}
+.container {
+  width: 375px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

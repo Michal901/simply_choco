@@ -1,20 +1,9 @@
-html {
-  /* background-color: #b8b8b8; */
-}
-/* ------------- Chwilowy reset ------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Monrserrat, sans-serif;
-}
+@import url(global-setup.css);
+
 .hero a,
 .hero button {
-  text-decoration: none;
   color: #fff;
 }
-
-/* ------------- Chwilowy reset ------------- */
 .hero {
   width: 375px;
   height: 690px;
