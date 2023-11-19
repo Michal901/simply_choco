@@ -329,6 +329,20 @@ html {
   background-color: #fd9222;
   color: #fff;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  padding-top: 32px;
+}
+.reviews-pagination-svg {
+  cursor: pointer;
+  fill: rgba(17, 17, 17, 0.1);
+}
+.orange-svg {
+  fill: #fd9222;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .reviews {
     width: 768px;
@@ -350,10 +364,13 @@ html {
 @media screen and (min-width: 1201px) {
   .reviews {
     width: 1200px;
+    height: 463px;
   }
   .reviews-slider-container {
     width: 1136px;
-    height: 204px;
+  }
+  .reviews-slide {
+    width: 360px;
   }
   .reviews-slide:nth-child(2),
   .reviews-slide:nth-child(3) {
