@@ -173,6 +173,7 @@ html {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     min-width: 768px;
+    height: 890px;
   }
   .hero-container {
     width: 704px;
