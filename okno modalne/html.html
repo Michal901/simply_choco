@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <button class="reviews-btn button button-position " type="button" data-modal-reviews-open>Leave a
+        review
+    </button>
+    <div class="rewiews-modal-container is-hidden" data-modal-reviews>
+        <div class="review-modal ">
+            <button type="button" class="modal-window-btn" data-modal-reviews-close>
+                <svg class="modal-window-svg" width="8" height="8">
+                    <use href="/icons.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+            <h2 class="review-modal-title">leave a review <br>
+                about <span class="review-modal-span">our chocolate</span>
+            </h2>
+            <div class="review-form-container">
+                <form action="" class="review-form">
+
+                    <label for="name"></label>
+                    <input class="reviews-input" placeholder="Name" type="text" id="name" required>
+
+                    <label for="email"></label>
+                    <input class="reviews-input" placeholder="Enter your email" type="email" id="email" required>
+
+                    <label for="phone"></label>
+                    <input class="reviews-input" placeholder="Number" type="tel" id="phone" minlength="9" required>
+
+
+                    <label for="review"></label>
+                    <textarea class="reviews-textarea" placeholder="Enter text" name="review" id="review"
+                        required></textarea>
+
+                    <button class="send-btn" type="submit">Send</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="modal-reviews.js"></script>
+
+</html>
